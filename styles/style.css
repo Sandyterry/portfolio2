@@ -1,0 +1,146 @@
+ul{
+    height: 30px;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    color: #6a6a6c;
+    font-family: 'Lucida Grande';
+    font-weight: 500;
+    margin: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.imgentete{
+    background-image: url(../Images/fond\ bulle\ p1.jpg);
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+.textep1{
+    color: #6a6a6c;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}    
+
+.page2{
+    background-color: #f9f1ef;
+}
+
+.nicetomeetyou{
+    color: #6a6a6c;
+    background-color: #f9f1ef;
+    background-image: url(../Images/fond\ bubble\ p2.png);
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 60px;
+    margin-right: 60px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 200%;
+}
+
+.homebutton{
+    margin-top: 75px;
+    text-align: left;
+   
+}
+
+.otherbutton{
+    display: flex;
+    margin-top: 75px;
+    justify-content: space-between;
+    width: 400px;
+}
+h1{
+    letter-spacing: 15px;
+    color: #6a6a6c;
+}
+
+h2{
+    letter-spacing: 10px;
+    color: #6a6a6c;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+
+}
+h3{ 
+    color: #6a6a6c;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.mesprojets{
+    padding: 50px;
+    background-color: #f9f1ef;
+    height: 1000px;
+}
+
+.mesrondsligne1{
+    background-color: #f9f1ef;
+    margin: 100px;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+.mesrondsligne2{
+    background-color: #f9f1ef;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+
+}
+
+.rond1{
+    height: 300px;
+    width: 300px;
+    background-color: #6a6a6c;
+    border-radius: 150px;
+}
+
+.rond2{
+    height: 300px;
+    width: 300px;
+    background-color: #6a6a6c;
+    border-radius: 150px;
+}
+
+.rond3{
+    height: 300px;
+    width: 300px;
+    background-color: #6a6a6c;
+    border-radius: 150px;
+}
+
+.rond4{
+    height: 300px;
+    width: 300px;
+    background-color: #6a6a6c;
+    border-radius: 150px;
+}
+
+.rond5{
+    height: 300px;
+    width: 300px;
+    background-color: #6a6a6c;
+    border-radius: 150px;
+}
