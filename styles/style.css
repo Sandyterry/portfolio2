@@ -198,27 +198,111 @@ h3{
     text-align: center;
 }
 
-.logocomplet{
-    
+
+.hardskill{
+    height: 150vh;
     display: flex;
-    height: 100px;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
     
 }
 
-.csshtml{
+
+.skillbar .namehskill{
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    color: #6a6a6c;
+    font-size: 2em;
+    font-weight: 500;
+    background-color: #f9f1ef;
 }
 
-.barrefondhtml{
-    height: 50px;
-    width: 150px;
-    background-color: #6a6a6c;
+.skillbar .namehskill span{
+    padding: 10px 20px;
+    margin: 15px 0;
+    box-shadow: 9.31px 9.31px 21px #D1D3D7, -9.31px -9.31px 21px #FFFFFF;
+    text-align: center;
+    border-radius: 50px;
+    border: 5px solid #f9f1ef;
+    transition: 0.2s;
+    
 }
 
-.jaugehtml{
-    height: 50px;
-    width: 150px;
-    background-color: palevioletred;
+.namehskill{
+    margin-right: 40px;
 }
+.skillbar .namehskill span:hover{
+    color: plum;
+    margin: 15px 0;
+    box-shadow: 9.31px 9.31px 21px #D1D3D7, -9.31px -9.31px 21px #FFFFFF,
+      inset 9.31px 9.31px 21px #D1D3D7, inset -9.31px -9.31px 21px #FFFFFF;
+    cursor: pointer;
+}
+
+.skillbar{
+    display: flex;
+    border: 2px solid;
+    padding: 4em;
+    border-radius: 30px;
+    color: #6a6a6c9c;
+}
+
+.bar {
+    width: 400px;
+    height: 30px;
+    background-color: #6a6a6ca9;
+    border-radius: 20px;
+    box-shadow: inset 6px 6px 21px #D1D3D7, inset -6px -6px 8px #FFFFFF;
+}
+
+
+.barcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+
+
+.bar .progress{
+    height: 100%;
+    background:linear-gradient(to right,#e6958191, #f9f1ef) ;
+    border-radius: 20px;
+} 
+.bar:nth-child(1) .progress{
+   width: 50%;
+}
+
+.bar:nth-child(2) .progress{
+    width: 50%;
+}
+
+.bar:nth-child(3) .progress{
+    width: 50%;
+}
+
+.bar:nth-child(4) .progress{
+    width: 50%;
+}
+
+.bar:nth-child(5) .progress{
+    width: 50%;
+}
+
+.bar:nth-child(6) .progress{
+    width: 50%;
+}
+
+.bar:nth-child(7) .progress{
+    width: 50%;
+}
+
+.bar:nth-child(8) .progress{
+    width: 50%;
+}
+
+.bar:nth-child(9) .progress{
+    width: 50%;
+}
+
