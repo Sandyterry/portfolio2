@@ -8,6 +8,8 @@ ul{
     font-family: 'Lucida Grande';
     font-weight: 500;
     margin: 0;
+    padding: 0;
+    font-size: 150%;
 }
 *{
     margin: 0;
@@ -15,33 +17,60 @@ ul{
     box-sizing: border-box;
 }
 .imgentete{
-    background-image: url(../Images/fond\ bulle\ p1.jpg);
-    height: 1000px;
+    background-image: url(../Images/holographic-white-background-iridescent-frame-abstract-design-vector_53876-157574\ 1\ \(1\).png);
+    height: 100vh;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size:cover;
+    background-position:center;
     margin: 0;
     padding: 0;
 }
 
+.fleche{
+}
+
 .textep1{
     color: #6a6a6c;
-    height: 700px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}    
+}  
+
+h1{
+    font-size: 300%;
+    letter-spacing: 15px;
+    color: #6a6a6c;
+}
+
+h2{
+    font-size: 250%;
+    letter-spacing: 10px;
+    color: #6a6a6c;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 120px;
+   
+}
+
+    .scroll{
+        Padding-top: 10%;
+        font-size: 200%;
+        font-family: 'Lucida Sans';
+
+    }
 
 .page2{
     background-color: #f9f1ef;
+    height: 70vh;
 }
 
 .nicetomeetyou{
     color: #6a6a6c;
     background-color: #f9f1ef;
     background-image: url(../Images/fond\ bubble\ p2.png);
-    height: 700px;
+    height: 1000px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -49,50 +78,46 @@ ul{
     margin-bottom: 60px;
     margin-left: 60px;
     margin-right: 60px;
-    height: 700px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    line-height: 200%;
+    line-height: 300%;
 }
 
 .homebutton{
+   
     margin-top: 75px;
+    height: 50px;
     text-align: left;
    
 }
 
 .otherbutton{
     display: flex;
+    justify-content: space-around;
     margin-top: 75px;
-    justify-content: space-between;
+    height: 50px;
     width: 400px;
-}
-h1{
-    letter-spacing: 15px;
-    color: #6a6a6c;
+    margin-right: 0%;
+    
+    
 }
 
-h2{
-    letter-spacing: 10px;
-    color: #6a6a6c;
-    text-align: center;
-    padding-bottom: 30px;
-    padding-top: 30px;
-
-
-}
 h3{ 
+    font-size: 200%;
     color: #6a6a6c;
     letter-spacing: 5px;
     text-align: center;
+    margin-bottom: 10%;
+    
 }
 
 .mesprojets{
     padding: 50px;
     background-color: #f9f1ef;
-    height: 1000px;
+    height: 1200px;
 }
 
 .mesrondsligne1{
@@ -143,4 +168,57 @@ h3{
     width: 300px;
     background-color: #6a6a6c;
     border-radius: 150px;
+}
+
+
+.soft-hard-skill{
+    background-image: url(../Images/molecule-cosmetics-background_173387-843.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 2000px;
+    width: 100%;
+    background-color: #f9f1ef;
+}
+
+.imagecompetence{
+    
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.textecompetence{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    color: #6a6a6c;
+    font-size: 150%;
+    text-align: center;
+}
+
+.logocomplet{
+    
+    display: flex;
+    height: 100px;
+    justify-content: space-evenly;
+    
+}
+
+.csshtml{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.barrefondhtml{
+    height: 50px;
+    width: 150px;
+    background-color: #6a6a6c;
+}
+
+.jaugehtml{
+    height: 50px;
+    width: 150px;
+    background-color: palevioletred;
 }
