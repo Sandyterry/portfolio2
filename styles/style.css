@@ -18,6 +18,11 @@ ul{
     text-decoration: none;
     list-style-type: none;
 }
+
+body{
+    background-color: #f9f1ef;
+}
+
 .imgentete{
     background-image: url(../Images/holographic-white-background-iridescent-frame-abstract-design-vector_53876-157574\ 1\ \(1\).png);
     height: 100vh;
@@ -50,10 +55,10 @@ color: #6a6a6c;
     margin: 0 20px;
 }
 
-.navbar .navlinks ul li.active a {
+/* .navbar .navlinks ul li.active a {
 color: palevioletred;
 font-weight: 600;
-} */
+}  */
 
 .nav{
     justify-content: space-around;
@@ -73,7 +78,7 @@ ul{
     cursor: pointer;
 }
 
-ul.left{
+ul.left{width: 397px;
     display: flex;
     text-align: left;
     padding: 30px;
@@ -110,7 +115,10 @@ ul.center{
 
 
 .fleche{
-    align-items: end;
+    height: 10%;
+    display: flex;
+    align-content: flex-end;
+
 }
 
 .textep1{
@@ -118,22 +126,27 @@ ul.center{
     height: 100vh;
     width: 100%;
     display: flex;
+
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
+    justify-content: flex-end;
 }  
 
 h1{
+    height: 12%;
     font-size: 300%;
     letter-spacing: 15px;
     color: #6a6a6c;
     /* justify-content: center;
     align-items: center; */
-    margin-bottom: 40px;
+    
     margin-top: 40px;
 }
 
 h2{
+    height: 18%;
+    margin-top: 2%;
     font-size: 250%;
     letter-spacing: 10px;
     color: #6a6a6c;
@@ -143,14 +156,17 @@ h2{
    
 }
 
-    p.scroll{
+    .scroll{
         font-size: 200%;
         font-family: 'Lucida Sans';
+        display: flex;
+        justify-content: flex-end;
         
 
     }
 
 .page2{
+    
     background-color: #f9f1ef;
     height: 100vh;
 }
@@ -208,7 +224,7 @@ h3{
 .rond1{
     height: 300px;
     width: 300px;
-    background: linear-gradient(#e0a59691, #D1D3D7);
+    background: linear-gradient(#e0a59691, #d1d3d700);
     border-radius: 150px;
     border-color: #c27efad2;
     box-shadow: inset 7.21px 7.21px 30px #e497eead, inset -7.21px -7.21px 30px #e1e8ff09;
@@ -217,7 +233,7 @@ h3{
 .rond2{
     height: 300px;
     width: 300px;
-    background: linear-gradient(#e0a59691, #D1D3D7);
+    background: linear-gradient(#e0a59691, #d1d3d700);
     border-radius: 150px;
     border-color: #c27efad2;
     box-shadow: inset 7.21px 7.21px 30px #e497eead, inset -7.21px -7.21px 30px #e1e8ff09;
@@ -226,7 +242,7 @@ h3{
 .rond3{
     height: 300px;
     width: 300px;
-    background: linear-gradient(#e0a59691, #D1D3D7);
+    background: linear-gradient(#e0a59691, #d1d3d700);
     border-radius: 150px;
     border-color: #c27efad2;
     box-shadow: inset 7.21px 7.21px 30px #e497eead, inset -7.21px -7.21px 30px #e1e8ff09;
@@ -235,7 +251,7 @@ h3{
 .rond4{
     height: 300px;
     width: 300px;
-    background: linear-gradient(#e0a59691, #D1D3D7);
+    background: linear-gradient(#e0a59691, #d1d3d700);
     border-radius: 150px;
     border-color: #c27efad2;
     box-shadow: inset 7.21px 7.21px 30px #e497eead, inset -7.21px -7.21px 30px #e1e8ff09;
@@ -244,13 +260,21 @@ h3{
 .rond5{
     height: 300px;
     width: 300px;
-    background: linear-gradient(#e0a59691, #D1D3D7);
+    background: linear-gradient(#e0a59691, #d1d3d700);
     border-radius: 150px;
     border-color: #c27efad2;
     box-shadow: inset 7.21px 7.21px 30px #e497eead, inset -7.21px -7.21px 30px #e1e8ff09;
 }
 
 
+.titrecomp{
+    font-size: 250%;
+    letter-spacing: 10px;
+    color: #6a6a6c;
+    text-align: center;
+   line-height: 300%;
+   
+}
 .soft-hard-skill{
     background-image: url(../Images/molecule-cosmetics-background_173387-843.jpg);
     background-repeat: no-repeat;
