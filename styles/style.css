@@ -434,3 +434,40 @@ h3{
     width: 50%;
 }
 
+/* contact */
+
+section{
+height: 100vh;
+width: 100vw;
+display: flex;
+justify-content: space-evenly;
+margin: 0;
+align-items: center;
+}
+
+section .contact{
+    height: 100%;
+    width: 100%;
+    background-color: #6a6a6c;
+    padding: 100px 0;
+ display: flex;
+}
+
+.leftpart{
+    display: flex;
+    width: 50%;
+}
+
+.rightpart{
+   display: flex;
+  justify-content: space-between;
+  width: 50%;
+  align-items: center;
+}
+
+.twopart{
+    display: flex;
+    justify-content: space-around;
+    height: 70%;
+    width: 70%;
+}
