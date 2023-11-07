@@ -23,12 +23,10 @@ body{
     list-style-type: none;
 }
 
-body{
-    background-color: #f9f1ef;
-}
+
 
 .imgentete{
-    background-image: url(../Images/holographic-white-background-iridescent-frame-abstract-design-vector_53876-157574\ 1\ \(1\).png);
+    background-image: url(../Images/fond-degrade-holographique-pastel-petillant.jpg);
     height: 100vh;
     background-repeat: no-repeat;
     background-size:cover;
@@ -80,7 +78,9 @@ ul{
     cursor: pointer;
 }
 
-ul.left{width: 397px;
+ul.left{
+    justify-content: flex-end;
+    width: 397px;
     display: flex;
     text-align: left;
     padding: 30px;
@@ -105,7 +105,7 @@ ul.li{display: flex;
     
 }
 
-a {
+a {color: #6a6a6c;
     text-decoration: none;
 }
 
@@ -443,6 +443,8 @@ display: flex;
 justify-content: space-evenly;
 margin: 0;
 align-items: center;
+background-color: #6a6a6c;
+background-image: url(../Images/—Pngtree—soap\ bubble\ realistic\ border\ bubble_7505566.png);
 }
 
 section .contact{
@@ -453,21 +455,119 @@ section .contact{
  display: flex;
 }
 
-.leftpart{
-    display: flex;
-    width: 50%;
-}
-
-.rightpart{
-   display: flex;
-  justify-content: space-between;
-  width: 50%;
-  align-items: center;
-}
-
 .twopart{
+    background-color: #f9f1ef;
+    /* border: #6a6a6c solid; */
     display: flex;
     justify-content: space-around;
     height: 70%;
     width: 70%;
+}
+
+.leftpart{
+    margin-left: 10%;
+    display: flex;
+    width: 50%;
+justify-content: center;
+flex-direction: column;
+align-items: flex-start;
+}
+
+.name{
+    font-size: 150%;
+    color: #6a6a6c;
+    height: 40px
+}
+
+input{
+    color: #6a6a6c;
+    width: 400PX;
+    height: 40px;
+}
+ select{
+    color: #6a6a6c;
+    width: 400px;
+    height: 40px;
+ }
+
+ textarea{
+    color: #6a6a6c;
+    width: 400px;
+    height: 100px;
+ }
+
+ .emailtxt{
+    color: #6a6a6c;
+    margin-top: 10px;
+    height: 40px;
+    font-size: 150%;
+ }
+
+ .budgettext{
+    margin-top: 10px;
+    height: 40px;
+    font-size: 150%;
+ }
+
+ .servicetext{
+    margin-top: 10px;
+    height: 40px;
+    font-size: 150%;
+ }
+ .message{
+    margin-top: 10px;
+    height: 40px;
+    font-size: 150%;
+ }
+
+ button{ 
+    color: #D1D3D7;
+    background-color: #6a6a6c;
+    width: 400px;
+ }
+
+.rightpart{
+
+    color: #6a6a6c;
+   display: flex;
+  width: 50%;
+  align-items: center;
+
+}
+
+.letstalk{
+    color: #6a6a6c;
+    font-size: 300%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.textarea{
+    color: #6a6a6c;
+    font-size: 130%;
+    height: 15%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.Email{
+    color: #6a6a6c;
+    font-size: 150%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5%;
+    
+}
+
+.imagecontact{
+   
+    height: 30%;
+    display: flex;
+    align-items: center;
+   
 }
