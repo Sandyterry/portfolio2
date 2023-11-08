@@ -1,3 +1,6 @@
+
+/* Navbar */
+
 ul{
     height: 30px;
     padding: 0;
@@ -10,30 +13,6 @@ ul{
     padding: 0;
     font-size: 150%;
 
-}
-
-body{ 
-    background-color: #f9f1ef;
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style-type: none;
-}
-
-
-
-.imgentete{
-    background-image: url(../Images/fond-degrade-holographique-pastel-petillant.jpg);
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position:center;
-    margin: 0;
-    padding: 0;
-    
 }
 
 .navbar{
@@ -57,11 +36,6 @@ color: #6a6a6c;
     margin: 0 20px;
 }
 
-/* .navbar .navlinks ul li.active a {
-color: palevioletred;
-font-weight: 600;
-}  */
-
 .nav{
     justify-content: space-around;
 }
@@ -69,17 +43,10 @@ ul{
     list-style: none;
     padding: 0;
     margin: 0;
-   
-}
 
-.nav:hover{
-    color: plum;
-    /* margin: 15px 0; */
-    cursor: pointer;
-}
 
 ul.left{
-    justify-content: flex-end;
+    justify-content: center;
     width: 397px;
     display: flex;
     text-align: left;
@@ -89,7 +56,7 @@ ul.left{
 }
 
 ul.right{
-    text-align: right;
+    text-align: left;
     padding: 30px;
     display: flex;
 }
@@ -116,10 +83,41 @@ ul.center{
 }
 
 
+/* General */
+
+body{ 
+    background-color:  #f9f1ef ;
+    height: 100vh;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+/* page 1 */
+
+.imgentete{
+    background-image: url(../Images/modele-bulle-savon-fond-papier-peint-pastel.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
 .fleche{
-    height: 10%;
+    height: 5%;
     display: flex;
     align-content: flex-end;
+ 
 
 }
 
@@ -131,7 +129,6 @@ ul.center{
 
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
     justify-content: flex-end;
 }  
 
@@ -140,9 +137,6 @@ h1{
     font-size: 300%;
     letter-spacing: 15px;
     color: #6a6a6c;
-    /* justify-content: center;
-    align-items: center; */
-    
     margin-top: 40px;
 }
 
@@ -167,6 +161,8 @@ h2{
 
     }
 
+/* Page2 */
+
 .page2{
     
     background-color: #f9f1ef;
@@ -175,8 +171,8 @@ h2{
 
 .nicetomeetyou{
     color: #6a6a6c;
-    background-color: #f9f1ef;
-    background-image: url(../Images/fond\ bubble\ p2.png);
+    background:linear-gradient(#f9f1ef, #f8d3e6,#bae2fa,#91cdf0, #bae2fa,#f8d3e6,#f9f1ef) ;
+    /* background-image: url(../Images/fond\ bubble\ p2.png); */
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -202,14 +198,16 @@ h3{
     
 }
 
+/* Mes projets */
+
 .mesprojets{
     padding: 50px;
-    background-color: #f9f1ef;
+    background:linear-gradient(#f9f1ef, #f5d9ee, #f0daf5, #e6ebfc, #e8ebf5,#f9f1ef,#fdfbfb) ;
     height: 1200px;
 }
 
 .mesrondsligne1{
-    background-color: #f9f1ef;
+    background-color: #dbd9db00;
     width: 85%;
     margin: 100px;
     display: flex;
@@ -223,11 +221,15 @@ h3{
 }
 .mesrondsligne2{
     width: 95%;
-    background-color: #f9f1ef;
+    background-color: #dbd9db00;
     display: flex;
     align-content: center;
     justify-content: space-evenly;
+}
 
+.mesrondsligne2 :hover{
+    cursor: pointer;
+    background-color: rgb(184, 140, 226);
 }
 
 .rond1{
@@ -276,6 +278,7 @@ h3{
     box-shadow: inset 7.21px 7.21px 30px #e497eead, inset -7.21px -7.21px 30px #e1e8ff09;
 }
 
+/* Mes competences */
 
 .titrecomp{
     font-size: 250%;
@@ -434,16 +437,16 @@ h3{
     width: 50%;
 }
 
-/* contact */
+/* Contact */
 
 section{
 height: 100vh;
 width: 100vw;
 display: flex;
-justify-content: space-evenly;
+justify-content: center;
 margin: 0;
 align-items: center;
-background-color: #6a6a6c;
+background-color: #dbd9db; 
 background-image: url(../Images/—Pngtree—soap\ bubble\ realistic\ border\ bubble_7505566.png);
 }
 
@@ -456,7 +459,7 @@ section .contact{
 }
 
 .twopart{
-    background-color: #f9f1ef;
+    background-color: #f9f1ef41;
     /* border: #6a6a6c solid; */
     display: flex;
     justify-content: space-around;
@@ -567,7 +570,11 @@ input{
 .imagecontact{
    
     height: 30%;
+    width: 80%;
     display: flex;
-    align-items: center;
+    align-items:flex-end;
+    justify-content:space-around ;
+    align-content: flex-end;
    
 }
+

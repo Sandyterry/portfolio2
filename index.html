@@ -9,10 +9,10 @@
 <body>
     <header>
 
-
+<!-- Navbar -->
         <nav class="navbar">
             <ul class="left">
-                <li><a href="">Home</a>
+                <li><a href="#ancrehome">Home</a>
                 </li>
             </ul>
 
@@ -21,13 +21,14 @@
                 </div>
                 
                 <ul class="right">
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">About me</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="mes projets.html">Projects</a></li>
+                    <li><a href="#ancreabtme">About me</a></li>
+                    <li><a href="#ancrecontact">Contact</a></li>
                 </ul>
         </nav>
 
-        
+<!-- Première page         -->
+
         <div class="imgentete">
             
             <div class="textep1">
@@ -49,8 +50,10 @@
                 </div>       
     </header>
 
+<!-- Mes projets -->
+
     <div class="mesprojets">
-        <h2>My Projects</h2>
+        <h2 class="titleproj">My Projects</h2>
             <div class="mesrondsligne1">
                 <div class="rond1"></div>
                 <div class="rond2"></div>
@@ -64,8 +67,12 @@
             
     </div>
 
+
+<div id="ancreabtme"></div>
+
+<!-- Compètences -->
+
     <div class="soft-hard-skill">
-        
         <div class="titrecomp">Soft/Hard Skills </div>
 
         <div class="imagecompetence">
@@ -134,20 +141,28 @@
 
     </div>
 
+    <div id="ancrecontact"></div>
+
+<!-- Contact -->
+
         <section class="contact">
             <div class="twopart">
+
                 <div class="leftpart">
+
                     <div class="letstalk">Let's Talk</div>
                     <div class="textarea">Have some big idea or project to develop <br>and need help? Then reach out we'd love <br>hear about your project and provide help</div>
                     <div>
                         <div class="Email">Email</div>
-                        <li ><a href="">sandy_terry@hotmail.fr</a></li>
+                        <li class="mymail"><a href="">sandy_terry@hotmail.fr</a></li>
                     </div>
                         <div class="imagecontact">
                             <img src="Images/github-142-svgrepo-com 1.png" height="50px" width="50px">
                             <img src="Images/linkedin-rounded-svgrepo-com 1.png" height="50px" width="50px">
                         </div>
                 </div>
+
+               
 
                 <div class="rightpart">
                     <form action="a" method="post">
@@ -156,21 +171,21 @@
 
                         </div>
                             <div>
-                                <input type="text" name="Name" placeholder="Entrer votre nom et prénom" required->
+                                <input type="text" name="Name" placeholder="Enter your name and surname" required->
                             </div>
 
                         <div class="emailtxt">Email
 
                         </div>
                            <div>
-                                <input type="email" name="Email" placeholder="Entrer votre email" required ="">
+                                <input type="email" name="Email" placeholder="Enter your email" required ="">
                         </div>
 
                             <div class="servicetext">What service are you interested in
                                 
                             </div>
                                <div> 
-                                    <select name="services" id="select your services">
+                                    <select name="services" id="select your service">
                                             <option value="">--Please choose an option--</option>
                                             <option value="option1">Option 1</option>
                                             <option value="option2">Option 2</option>
@@ -184,7 +199,7 @@
                                 <div class="budgettext">Budget
 
                                 </div>
-                                     <div><select name="budget" id="select budget">
+                                     <div><select name="budget" id="select your budget">
                                                     <option value="">--Please choose an option--</option>
                                                     <option value="option1">Option 1</option>
                                                     <option value="option2">Option 2</option>
@@ -196,7 +211,6 @@
                                     </div>    
 
                           <div class="message">Message
-
                           </div>
                                  <div>
                                     <textarea type="text" name="Message" placeholder="Write your message..." required id=""></textarea>
@@ -207,8 +221,19 @@
                                 
 
                     </form>
+
+                    
+
                 </div>
-            </div>    
+            </div> 
+                        
+    <div id="ancrehome">
+
+    </div>   
+    
+    
+
         </section>
+
 </body>
 </html>
