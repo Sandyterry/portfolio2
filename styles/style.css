@@ -43,7 +43,7 @@ ul{
     list-style: none;
     padding: 0;
     margin: 0;
-
+}
 
 ul.left{
     justify-content: center;
@@ -103,6 +103,7 @@ body{
 .imgentete{
     background-image: url(../Images/modele-bulle-savon-fond-papier-peint-pastel.jpg);
     height: 100vh;
+    width: 100%;
     background-repeat: no-repeat;
     background-size:cover;
     background-position:center;
@@ -206,19 +207,22 @@ h3{
     height: 1200px;
 }
 
+.mesprojbulles{
+    display: flex;
+}
 .mesrondsligne1{
     background-color: #dbd9db00;
     width: 85%;
-    margin: 100px;
+    margin: 50px;
     display: flex;
     align-content: center;
     justify-content: space-around;
 }
 
-.mesrondsligne1 :hover{
+/* .mesrondsligne1 :hover{
     cursor: pointer;
-    background-color: rgb(184, 140, 226);
-}
+    background-color: rgb(184, 140, 226); */
+/* } */
 .mesrondsligne2{
     width: 95%;
     background-color: #dbd9db00;
@@ -227,55 +231,164 @@ h3{
     justify-content: space-evenly;
 }
 
-.mesrondsligne2 :hover{
+/* .mesrondsligne2 :hover{
     cursor: pointer;
     background-color: rgb(184, 140, 226);
-}
+} */
 
-.rond1{
-    height: 300px;
+
+
+.ball {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    position: relative;
+    background: radial-gradient(circle at bottom, #81e8f6, #76deef 10%, #055194 80%, #062745 100%); }
+    .ball:before {
+      content: "";
+      position: absolute;
+      top: 1%;
+      left: 5%;
+      width: 90%;
+      height: 90%;
+      border-radius: 100%;
+      background: radial-gradient(circle at top, white, rgba(255, 255, 255, 0) 58%);
+      -webkit-filter: blur(5px);
+      filter: blur(5px);
+      z-index: 2; }
+    .ball:after {
+      content: "";
+      position: absolute;
+      display: none;
+      top: 5%;
+      left: 10%;
+      width: 80%;
+      height: 80%;
+      border-radius: 100%;
+      -webkit-filter: blur(1px);
+      filter: blur(1px);
+      z-index: 2;
+      -webkit-transform: rotateZ(-30deg);
+      transform: rotateZ(-30deg); }
+    .ball .shadow {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 50%);
+      -webkit-transform: rotateX(90deg) translateZ(-160px);
+      transform: rotateX(90deg) translateZ(-160px);
+      z-index: 1; }
+    .ball.plain {
+      background: black; }
+      .ball.plain:before, .ball.plain:after {
+        display: none; }
+    .ball.bubble {
+      background: radial-gradient(circle at 50% 55%, rgba(240, 245, 255, 0.9), rgba(240, 245, 255, 0.9) 40%, rgba(225, 238, 255, 0.8) 60%, rgba(43, 130, 255, 0.4));
+      -webkit-animation: bubble-anim 2s ease-out infinite;
+      animation: bubble-anim 2s ease-out infinite; }
+      .ball.bubble:before {
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        height: 80%;
+        width: 40%;
+        background: radial-gradient(circle at 130% 130%, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0) 46%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.8) 58%, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0) 100%);
+        -webkit-transform: translateX(131%) translateY(58%) rotateZ(168deg) rotateX(10deg);
+        transform: translateX(131%) translateY(58%) rotateZ(168deg) rotateX(10deg); }
+      .ball.bubble:after {
+        display: block;
+        background: radial-gradient(circle at 50% 80%, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 74%, white 80%, white 84%, rgba(255, 255, 255, 0) 100%); }
+  
+  .stage {
     width: 300px;
-    background: linear-gradient(#e0a59691, #D1D3D7);
-    border-radius: 150px;
-    border: #e7bbf07a solid;
-    box-shadow: inset 10.81px 10.81px 29px #de7af760, inset -10.81px -10.81px 29px #f1e4f1;
-
-}
+    height: 300px;
+    display: inline-block;
+    margin: 20px;
+    -webkit-perspective: 1200px;
+    -moz-perspective: 1200px;
+    -ms-perspective: 1200px;
+    -o-perspective: 1200px;
+    perspective: 1200px;
+    -webkit-perspective-origin: 50% 50%;
+    -moz-perspective-origin: 50% 50%;
+    -ms-perspective-origin: 50% 50%;
+    -o-perspective-origin: 50% 50%;
+    perspective-origin: 50% 50%;
+  }
+  
+  
+  @-webkit-keyframes bubble-anim {
+    0% {
+      -webkit-transform: scale(1);
+      transform: scale(1); }
+  
+    20% {
+      -webkit-transform: scaleY(0.95) scaleX(1.05);
+      transform: scaleY(0.95) scaleX(1.05); }
+  
+    48% {
+      -webkit-transform: scaleY(1.1) scaleX(0.9);
+      transform: scaleY(1.1) scaleX(0.9); }
+  
+    68% {
+      -webkit-transform: scaleY(0.98) scaleX(1.02);
+      transform: scaleY(0.98) scaleX(1.02); }
+  
+    80% {
+      -webkit-transform: scaleY(1.02) scaleX(0.98);
+      transform: scaleY(1.02) scaleX(0.98); }
+  
+    97%, 100% {
+      -webkit-transform: scale(1);
+      transform: scale(1); } }
+  
+  @keyframes bubble-anim {
+    0% {
+      -webkit-transform: scale(1);
+      transform: scale(1); }
+  
+    20% {
+      -webkit-transform: scaleY(0.95) scaleX(1.05);
+      transform: scaleY(0.95) scaleX(1.05); }
+  
+    48% {
+      -webkit-transform: scaleY(1.1) scaleX(0.9);
+      transform: scaleY(1.1) scaleX(0.9); }
+  
+    68% {
+      -webkit-transform: scaleY(0.98) scaleX(1.02);
+      transform: scaleY(0.98) scaleX(1.02); }
+  
+    80% {
+      -webkit-transform: scaleY(1.02) scaleX(0.98);
+      transform: scaleY(1.02) scaleX(0.98); }
+  
+    97%, 100% {
+      -webkit-transform: scale(1);
+      transform: scale(1); } }
 
 .rond2{
     height: 300px;
     width: 300px;
-    background: linear-gradient(#e0a59691, #D1D3D7);
-    border-radius: 150px;
-    border-color: #c27efad2;
-    box-shadow: inset 7.21px 7.21px 30px #e497eead, inset -7.21px -7.21px 30px #e1e8ff09;
+   
 }
 
 .rond3{
     height: 300px;
     width: 300px;
-    background: linear-gradient(#e0a59691, #D1D3D7);
-    border-radius: 150px;
-    border-color: #c27efad2;
-    box-shadow: inset 7.21px 7.21px 30px #e497eead, inset -7.21px -7.21px 30px #e1e8ff09;
+   
 }
 
 .rond4{
     height: 300px;
     width: 300px;
-    background: linear-gradient(#e0a59691, #D1D3D7);
-    border-radius: 150px;
-    border-color: #c27efad2;
-    box-shadow: inset 7.21px 7.21px 30px #e497eead, inset -7.21px -7.21px 30px #e1e8ff09;
+   
 }
 
 .rond5{
     height: 300px;
     width: 300px;
-    background: linear-gradient(#e0a59691, #D1D3D7);
-    border-radius: 150px;
-    border-color: #c27efad2;
-    box-shadow: inset 7.21px 7.21px 30px #e497eead, inset -7.21px -7.21px 30px #e1e8ff09;
+    
 }
 
 /* Mes competences */
@@ -439,24 +552,25 @@ h3{
 
 /* Contact */
 
-section{
-height: 100vh;
-width: 100vw;
+section .contact{
+    /* height: 100vh;
+width: 100vw; */
 display: flex;
 justify-content: center;
 margin: 0;
 align-items: center;
-background-color: #dbd9db; 
-background-image: url(../Images/—Pngtree—soap\ bubble\ realistic\ border\ bubble_7505566.png);
+height: 100%;
+width: 100%;
+padding: 100px 0;
 }
 
-section .contact{
+/* section .contact{
     height: 100%;
     width: 100%;
     background-color: #6a6a6c;
     padding: 100px 0;
  display: flex;
-}
+} */
 
 .twopart{
     background-color: #f9f1ef41;
@@ -577,4 +691,3 @@ input{
     align-content: flex-end;
    
 }
-
